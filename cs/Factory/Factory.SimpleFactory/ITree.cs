@@ -5,10 +5,9 @@ using System.Text;
 
 namespace Factory
 {
-    class Program
+    public interface ITree
     {
-        static void Main(string[] args)
-        {
-        }
+        void Grows();
+        void Dies();
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{57823098-44D6-4D0C-9B7F-A401626D4512}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.SimpleFactory", "Factory\Factory.SimpleFactory\Factory.SimpleFactory.csproj", "{57823098-44D6-4D0C-9B7F-A401626D4512}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
