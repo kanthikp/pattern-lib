@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="TreeFactory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Factory.FactoryMethod.Factories.CypressFactory</Value>
+      <Value Profile="(Default)">Factory.FactoryMethod.Factories.BonsaiFactory</Value>
     </Setting>
   </Settings>
 </SettingsFile>
