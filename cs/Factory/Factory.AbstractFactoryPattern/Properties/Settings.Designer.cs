@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Factory.FactoryMethod.Properties {
+namespace Factory.AbstractFactoryPattern.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,7 +25,7 @@ namespace Factory.FactoryMethod.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Factory.FactoryMethod.Factories.BonsaiFactory")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Factory.AbstractFactoryPattern.CypressFactory")]
         public string TreeFactory {
             get {
                 return ((string)(this["TreeFactory"]));

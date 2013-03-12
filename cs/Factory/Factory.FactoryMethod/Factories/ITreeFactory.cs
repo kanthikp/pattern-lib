@@ -1,5 +1,5 @@
 ﻿using Factory.FactoryMethod.Trees;
-namespace Factory.FactoryMethod
+namespace Factory.FactoryMethod.Factories
 {
     public interface ITreeFactory
     {
