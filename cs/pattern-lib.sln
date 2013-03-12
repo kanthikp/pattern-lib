@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.FactoryMethod", "Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.AbstractFactoryPattern", "Factory\Factory.AbstractFactoryPattern\Factory.AbstractFactoryPattern.csproj", "{5C645B6D-C00E-40A6-8F36-728CF197FB41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder.Pattern", "Builder\Builder.Pattern\Builder.Pattern.csproj", "{15D3CA37-BCCA-4B7B-BAF1-F8EE237819A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,6 +27,10 @@ Global
 		{5C645B6D-C00E-40A6-8F36-728CF197FB41}.Debug|x86.Build.0 = Debug|x86
 		{5C645B6D-C00E-40A6-8F36-728CF197FB41}.Release|x86.ActiveCfg = Release|x86
 		{5C645B6D-C00E-40A6-8F36-728CF197FB41}.Release|x86.Build.0 = Release|x86
+		{15D3CA37-BCCA-4B7B-BAF1-F8EE237819A9}.Debug|x86.ActiveCfg = Debug|x86
+		{15D3CA37-BCCA-4B7B-BAF1-F8EE237819A9}.Debug|x86.Build.0 = Debug|x86
+		{15D3CA37-BCCA-4B7B-BAF1-F8EE237819A9}.Release|x86.ActiveCfg = Release|x86
+		{15D3CA37-BCCA-4B7B-BAF1-F8EE237819A9}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
