@@ -8,14 +8,9 @@ namespace Builder.Pattern
     {
         static void Main(string[] args)
         {
-            World w = new World();
-            w.planetType = World.PlanetType.Terrestrial;
-            w.canLive = true;
-            w.mountainType =World.MountainType.Sedimentary;
-            w.grassType = World.GrassType.Bluegrass;
-            w.hasRocks = true;
-            w.hasTrees = true;
-            w.species = new List<string> { "Bees","Boas" };
+            var builder = new BraveNewWorldBuilder();
+            builder.CreateWorld();
+            var w = builder.GetWorld();
 
             w.Display();
             Console.ReadKey();

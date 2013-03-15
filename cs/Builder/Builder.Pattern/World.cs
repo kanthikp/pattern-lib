@@ -2,8 +2,6 @@
 using System;
 namespace Builder.Pattern
 {
-    
-
     public class World
     {
         public  PlanetType planetType {get;  set;}
@@ -13,18 +11,6 @@ namespace Builder.Pattern
         public  bool hasTrees { get;  set; }
         public  bool hasRocks { get;  set; }
         public  List<string> species { get;  set; }        
-
-        /*public World(PlanetType planetType,bool canLive,MountainType mountainType,GrassType grassType,bool hasTrees,  
-                        bool hasRocks,List<string> species)
-        {
-            this.planetType =planetType;
-            this.canLive = canLive;
-            this.mountainType =mountainType;
-            this.grassType =grassType; 
-            this.hasTrees =hasTrees;
-            this.hasRocks =hasRocks;
-            this.species = species;
-        }*/
 
         public void Display()
         {
