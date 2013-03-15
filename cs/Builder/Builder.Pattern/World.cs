@@ -2,6 +2,7 @@
 using System;
 namespace Builder.Pattern
 {
+    // product
     public class World
     {
         public  PlanetType planetType {get;  set;}
@@ -14,7 +15,7 @@ namespace Builder.Pattern
 
         public void Display()
         {
-            Console.WriteLine("World is off {0} type", planetType);
+            Console.WriteLine("World has {0} type", planetType);
             if(canLive)
                 Console.WriteLine("Can live");
             if(hasRocks)

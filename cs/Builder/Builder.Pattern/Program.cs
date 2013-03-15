@@ -8,11 +8,17 @@ namespace Builder.Pattern
     {
         static void Main(string[] args)
         {
-            var builder = new BraveNewWorldBuilder();
-            builder.CreateWorld();
-            var w = builder.GetWorld();
-
+            // brave new world
+            var wMaker = new WorldMaker(new BraveNewWorldBuilder());
+            wMaker.BuildWorld();
+            var w = wMaker.GetWorld();
             w.Display();
+            // space jam world
+            var wMaker2 = new WorldMaker(new SpaceJamWorldBuilder());
+            wMaker2.BuildWorld();
+            var w2 = wMaker2.GetWorld();
+            w2.Display();
+
             Console.ReadKey();
         }
     }

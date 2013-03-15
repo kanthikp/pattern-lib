@@ -5,33 +5,24 @@ using System.Text;
 
 namespace Builder.Pattern
 {
-    class BraveNewWorldBuilder
+    // concrete builder
+    class BraveNewWorldBuilder : WorldBuilder
     {
-        World world;
-        public World GetWorld()
-        {           
-            return world;
+        public BraveNewWorldBuilder() {
+            CreateNewWorld();
         }
-        public void CreateWorld()
-        {
-            world = new World();
-            PrepareEarth();
-            ApplyNature();
-            AddSpecied();          
-        }
-
-        private void AddSpecied()
+        public override void AddSpecied()
         {
             world.species = new List<string> { "Bees", "Boas" };
         }
 
-        private void ApplyNature()
+        public override void ApplyNature()
         {           
             world.grassType = World.GrassType.Bluegrass;
             world.hasTrees = true;
         }
 
-        private void PrepareEarth()
+        public override void PrepareEarth()
         {
             world.planetType = World.PlanetType.Terrestrial;
             world.canLive = true;
