@@ -19,33 +19,22 @@ namespace Composite.Pattern
             var ceiba = new Tree { Name = "ceiba" };
             var trees = new Group { Name = "bigTrees", Trees = { cypress, baobab, pine } };
 
-            var singleTrees = new List<Tree> { bonsai, ceiba };
-            var groups = new List<Group> { trees };
+           var forests = new List<Forest> { trees, bonsai, ceiba };
 
-            var totalToSplitBy = singleTrees.Count + groups.Count;
-
+            var totalToSplitBy = forests.Count;
+            
             var amountForEach = maxleafsToCreate / totalToSplitBy;
             var leftOver = maxleafsToCreate % totalToSplitBy;
 
-            foreach (var singleTree in singleTrees) {
-                singleTree.Leafs += amountForEach + leftOver;
+            foreach (var forestMember in forests) {
+                forestMember.Leafs += amountForEach + leftOver;
                 leftOver = 0;
-                singleTree.Stats();
-            }
-
-            foreach (var group in groups) {
-                var amountForEachGroupTree = amountForEach / group.Trees.Count;
-                var leftOverForGroup = amountForEachGroupTree%group.Trees.Count;
-
-                foreach (var tree in group.Trees) {
-                    tree.Leafs += amountForEachGroupTree + leftOverForGroup;
-                    leftOverForGroup = 0;
-                    tree.Stats();
-                }
+                forestMember.Stats();
             }
 
             Console.ReadKey();
 
         }
     }
+    
 }
