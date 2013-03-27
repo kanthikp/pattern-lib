@@ -23,18 +23,11 @@ namespace Composite.Pattern
 
             var trees = new Group { Name = "Trees", Trees = { cypress, baobab, pine, oldnewtrees } };
 
-           var forests = new List<Forest> { trees, bonsai, ceiba };
+            var forests = new Group { Trees = { trees, bonsai, ceiba } };
 
-            var totalToSplitBy = forests.Count;
-            
-            var amountForEach = maxleafsToCreate / totalToSplitBy;
-            var leftOver = maxleafsToCreate % totalToSplitBy;
-
-            foreach (var forestMember in forests) {
-                forestMember.Leafs += amountForEach + leftOver;
-                leftOver = 0;
-                forestMember.Stats();
-            }
+            forests.Leafs += maxleafsToCreate;
+            forests.Stats();
+           
 
             Console.ReadKey();
 

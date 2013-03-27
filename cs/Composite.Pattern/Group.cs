@@ -13,7 +13,7 @@ namespace Composite.Pattern
             Trees = new List<Forest>();
         }
 
-        int Forest.Leafs
+        public int Leafs
         {
             get
             {
@@ -34,7 +34,7 @@ namespace Composite.Pattern
             }
         }
 
-        void Forest.Stats()
+         public void Stats()
         {
             foreach (var tree in Trees)
                 tree.Stats();
