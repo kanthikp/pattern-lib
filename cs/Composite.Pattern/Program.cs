@@ -26,11 +26,9 @@ namespace Composite.Pattern
             var forests = new Group { Trees = { trees, bonsai, ceiba } };
 
             forests.Leafs += maxleafsToCreate;
-            forests.Stats();
-           
+            forests.Stats();           
 
             Console.ReadKey();
-
         }
     }
     
