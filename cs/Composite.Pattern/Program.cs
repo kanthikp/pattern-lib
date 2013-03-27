@@ -17,7 +17,11 @@ namespace Composite.Pattern
             var baobab = new Tree { Name = "baobab" };
             var pine = new Tree { Name = "pine" };
             var ceiba = new Tree { Name = "ceiba" };
-            var trees = new Group { Name = "bigTrees", Trees = { cypress, baobab, pine } };
+            var oldTree = new Tree { Name = "oldTree" };
+            var newTree = new Tree { Name = "newTree" };
+            var oldnewtrees = new Group { Trees = { oldTree, newTree } };
+
+            var trees = new Group { Name = "Trees", Trees = { cypress, baobab, pine, oldnewtrees } };
 
            var forests = new List<Forest> { trees, bonsai, ceiba };
 
