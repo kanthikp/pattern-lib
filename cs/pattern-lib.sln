@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite.Pattern", "Compos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype.Pattern.2", "Prototype\Prototype.Pattern.2\Prototype.Pattern.2.csproj", "{D7071856-1437-4C4C-B5AC-CD8393B6B130}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype.Pattern.3", "Prototype.Pattern.3\Prototype.Pattern.3.csproj", "{F17A1DED-0BA6-48E6-B67B-EB1138223390}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -49,6 +51,10 @@ Global
 		{D7071856-1437-4C4C-B5AC-CD8393B6B130}.Debug|x86.Build.0 = Debug|x86
 		{D7071856-1437-4C4C-B5AC-CD8393B6B130}.Release|x86.ActiveCfg = Release|x86
 		{D7071856-1437-4C4C-B5AC-CD8393B6B130}.Release|x86.Build.0 = Release|x86
+		{F17A1DED-0BA6-48E6-B67B-EB1138223390}.Debug|x86.ActiveCfg = Debug|x86
+		{F17A1DED-0BA6-48E6-B67B-EB1138223390}.Debug|x86.Build.0 = Debug|x86
+		{F17A1DED-0BA6-48E6-B67B-EB1138223390}.Release|x86.ActiveCfg = Release|x86
+		{F17A1DED-0BA6-48E6-B67B-EB1138223390}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
