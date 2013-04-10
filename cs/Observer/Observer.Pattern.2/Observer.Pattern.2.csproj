@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0D065FD8-B9BB-4A7D-B288-B2DB576899DE}</ProjectGuid>
+    <ProjectGuid>{B0A10639-EC74-486C-9067-BF54E177E0D4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Observer.Pattern._1</RootNamespace>
-    <AssemblyName>Observer.Pattern.1</AssemblyName>
+    <RootNamespace>Observer.Pattern._2</RootNamespace>
+    <AssemblyName>Observer.Pattern.2</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -43,14 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractObserver.cs" />
-    <Compile Include="AbstractSubject.cs" />
-    <Compile Include="GoogleObserver.cs" />
-    <Compile Include="MicrosoftObserver.cs" />
+    <Compile Include="GoogleMonitor.cs" />
+    <Compile Include="MicrosoftMonitor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleData.cs" />
     <Compile Include="Stock.cs" />
+    <Compile Include="StockChangeEventArgs.cs" />
     <Compile Include="StockTicker.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,7 +13,10 @@ namespace Prototype.Pattern
             digger.PrintPageData();
 
             var digger2 = digger.Clone() as WebPageDigger;
+            digger2.headerTagCount = -9;
             digger2.PrintPageData();
+            Console.WriteLine("--------");
+            digger.PrintPageData();
 
             Console.ReadKey();
         }

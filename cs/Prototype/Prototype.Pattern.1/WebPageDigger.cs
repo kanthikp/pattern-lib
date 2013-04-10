@@ -9,7 +9,7 @@ namespace Prototype.Pattern
     class WebPageDigger : ICloneable
     {
         private string title;
-        private int headerTagCount;
+        public int headerTagCount;
         private string firstHeaderTagContents;
 
         public WebPageDigger(string url) 
