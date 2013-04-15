@@ -7,14 +7,14 @@ namespace Facade.WeatherService
 {
     public class GeoLookupService
     {
-        public object GetCityFromZipCode(string zipCode)
+        public string GetCityFromZipCode(string zipCode)
         {
-            throw new NotImplementedException();
+            return "Paris";
         }
 
         public object GetStateFromZipCode(string zipCode)
         {
-            throw new NotImplementedException();
+            return "IDF";
         }
 
         public Coord GetCoordinatesFromZipCode(string zipCode)
@@ -23,8 +23,8 @@ namespace Facade.WeatherService
         }
         public class Coord
         {
-            public double Latitude = 0;
-            public double Longitude = 0;
+            public double Latitude = 98;
+            public double Longitude = 25;
         }
     }
 }

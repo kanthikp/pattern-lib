@@ -7,16 +7,16 @@ namespace Facade.WeatherService
 {
     public class EnglishMetricConverter
     {
-        public static Celcius  FarenheitToCelcious(object farenheit)
+        public Celcius  FarenheitToCelcious(object farenheit)
         {
-            throw new NotImplementedException();
+            return new Celcius();
         }
         public class Celcius
         {
             public double value;
             public Celcius() 
             {
-                value = 0;
+                value = 21;
             }
             public string ToString(string v)
             {

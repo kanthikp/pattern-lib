@@ -7,16 +7,16 @@ namespace Facade.WeatherService
 {
     public class WeatherServices
     {
-        public static Farenheit GetTempFarenheit(double latitude, double longitude)
+        public Farenheit GetTempFarenheit(double latitude, double longitude)
         {
-            throw new NotImplementedException();
+            return new Farenheit();
         }
         public class Farenheit
         {
             public double value;
             public Farenheit()
             {
-                value = 0;
+                value = 130;
             }
             public string ToString(string s)
             {
