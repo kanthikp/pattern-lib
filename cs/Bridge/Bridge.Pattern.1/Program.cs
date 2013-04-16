@@ -16,7 +16,7 @@ namespace Bridge.Pattern._1
             faq.Questions.Add("When do we use it?", "When you need to separate an abstraction from an implementation");
             documents.Add(faq);
 
-            var book = new Book
+            var book = new BackwardsBook
                             {
                                 Title = "Lots of Patterns",
                                 Author = "Jhon Sonmez",

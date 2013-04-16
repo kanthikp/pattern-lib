@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackwardsBook.cs" />
     <Compile Include="Book.cs" />
     <Compile Include="FAQ.cs" />
     <Compile Include="IManuscript.cs" />

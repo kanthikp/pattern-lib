@@ -11,7 +11,7 @@ namespace Bridge.Pattern._1
         public string Author { get; set; }
         public string Text { get; set; }
 
-        public void Print()
+        virtual public void Print()
         {
             Console.WriteLine("Title: {0}", Title);
             Console.WriteLine("Author: {0}", Author);
