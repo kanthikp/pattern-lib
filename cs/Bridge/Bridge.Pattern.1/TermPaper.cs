@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Bridge.Pattern._1
 {
-    class TermPaper
+    public class TermPaper: IManuscript
     {
         public string Class { get; set; }
         public string Student { get; set; }
@@ -18,8 +18,7 @@ namespace Bridge.Pattern._1
             Console.WriteLine("Student: {0}", Student);
             Console.WriteLine("Text: {0}", Text);
             Console.WriteLine("References: {0}", References);
-            Console.WriteLine();            
-
+            Console.WriteLine();
         }
     }
 }

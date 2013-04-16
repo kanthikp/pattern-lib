@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Bridge.Pattern._1
 {
-    public class FAQ
+    public class FAQ: IManuscript
     {
         public string Title { get; set; }
         public Dictionary<string, string> Questions { get; set; }
