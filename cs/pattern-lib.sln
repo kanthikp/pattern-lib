@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade.WeatherService", "Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade.Pattern.2", "Facade\Facade.Pattern.2\Facade.Pattern.2.csproj", "{DA2629F4-3BD7-4E6A-BAE0-AA02259B4CA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Pattern.1", "Bridge\Bridge.Pattern.1\Bridge.Pattern.1.csproj", "{6DADDC3A-0D7C-4618-BBE7-CBF568D7C579}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -91,6 +93,10 @@ Global
 		{DA2629F4-3BD7-4E6A-BAE0-AA02259B4CA4}.Debug|x86.Build.0 = Debug|x86
 		{DA2629F4-3BD7-4E6A-BAE0-AA02259B4CA4}.Release|x86.ActiveCfg = Release|x86
 		{DA2629F4-3BD7-4E6A-BAE0-AA02259B4CA4}.Release|x86.Build.0 = Release|x86
+		{6DADDC3A-0D7C-4618-BBE7-CBF568D7C579}.Debug|x86.ActiveCfg = Debug|x86
+		{6DADDC3A-0D7C-4618-BBE7-CBF568D7C579}.Debug|x86.Build.0 = Debug|x86
+		{6DADDC3A-0D7C-4618-BBE7-CBF568D7C579}.Release|x86.ActiveCfg = Release|x86
+		{6DADDC3A-0D7C-4618-BBE7-CBF568D7C579}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
