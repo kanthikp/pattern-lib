@@ -5,23 +5,23 @@ using System.Text;
 
 namespace Bridge.Pattern._1
 {
-    public class FAQ: IManuscript
+    public class FAQ: Manuscript
     {
         public string Title { get; set; }
         public Dictionary<string, string> Questions { get; set; }
 
-        public FAQ()
+        public FAQ(IFormatter formatter):base(formatter)
         {
             Questions = new Dictionary<string, string>();
         }
 
-        public void Print()
+        public override void Print()
         {
-            Console.WriteLine("Title: {0}", Title);
+            Console.WriteLine(formatter.Format("Title", Title));
             foreach (var q in Questions)
             {
-                Console.WriteLine("\tQuestion: {0}", q.Key);
-                Console.WriteLine("\tAnswer: {0}", q.Value);
+                Console.WriteLine(formatter.Format("\tQuestion", q.Key));
+                Console.WriteLine(formatter.Format("\tAnswer", q.Value));
             }
             Console.WriteLine();
         }

@@ -5,8 +5,8 @@ using System.Text;
 
 namespace Bridge.Pattern._1
 {
-    public interface IManuscript
+    public interface IFormatter
     {
-        void Print();
+        string Format(string key, string value);        
     }
 }

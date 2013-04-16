@@ -5,19 +5,21 @@ using System.Text;
 
 namespace Bridge.Pattern._1
 {
-    public class TermPaper: IManuscript
+    public class TermPaper: Manuscript
     {
         public string Class { get; set; }
         public string Student { get; set; }
         public string Text { get; set; }
         public string References { get; set; }
 
-        public void Print()
+        public TermPaper(IFormatter formatter) : base(formatter) { }
+
+        public override void Print()
         {
-            Console.WriteLine("Class: {0}", Class);
-            Console.WriteLine("Student: {0}", Student);
-            Console.WriteLine("Text: {0}", Text);
-            Console.WriteLine("References: {0}", References);
+            Console.WriteLine(formatter.Format("Class", Class));
+            Console.WriteLine(formatter.Format("Student", Student));
+            Console.WriteLine(formatter.Format("Text", Text));
+            Console.WriteLine(formatter.Format("References", References));
             Console.WriteLine();
         }
     }

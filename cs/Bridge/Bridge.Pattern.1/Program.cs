@@ -9,14 +9,18 @@ namespace Bridge.Pattern._1
     {
         static void Main(string[] args)
         {
-            List<IManuscript> documents = new List<IManuscript>();
-            var faq = new FAQ();
+            List<Manuscript> documents = new List<Manuscript>();
+            var formatter = new StandarFormatter();
+            var backwards = new BackwardsFormatter();
+            var fancyformatter = new FancyFormatter();
+
+            var faq = new FAQ(fancyformatter);
             faq.Title = "The Bridge Pattern FAQ";
             faq.Questions.Add("What is it?", "A design pattern");
             faq.Questions.Add("When do we use it?", "When you need to separate an abstraction from an implementation");
             documents.Add(faq);
 
-            var book = new BackwardsBook
+            var book = new Book(backwards)
                             {
                                 Title = "Lots of Patterns",
                                 Author = "Jhon Sonmez",
@@ -24,7 +28,7 @@ namespace Bridge.Pattern._1
                             };
             documents.Add(book);
 
-            var paper = new TermPaper
+            var paper = new TermPaper(formatter)
                             {
                                 Class = "Design Patterns",
                                 Student = "John Doe",
