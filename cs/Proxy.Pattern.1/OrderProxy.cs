@@ -13,7 +13,7 @@ namespace Proxy.Pattern._1
         private Customer _customer;
         private List<OrderDetails> _orderDetails;
 
-        public OrderProxy(int id):base(id)
+        public OrderProxy(int id)
         {
             _id = id;
         }
