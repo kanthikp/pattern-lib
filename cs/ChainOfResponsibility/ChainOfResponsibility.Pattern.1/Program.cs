@@ -9,13 +9,15 @@ namespace ChainOfResponsibility.Pattern._1
     {
         static void Main(string[] args)
         {
-            List<Employee> managers = new List<Employee>
-                                    {
-                                        new Employee("will worker", Decimal.Zero),
-                                        new Employee("mary manager", new Decimal(1000)),
-                                        new Employee("victor vpres", new Decimal(5000)),
-                                        new Employee("paula pres", new Decimal(20000)),
-                                    };
+            ExpenseHandler will = new ExpenseHandler(new Employee("will worker", Decimal.Zero));
+            ExpenseHandler mary = new ExpenseHandler(new Employee("mary manager", new Decimal(1000)));
+            ExpenseHandler victor = new ExpenseHandler(new Employee("victor vpres", new Decimal(5000)));
+            ExpenseHandler paula = new ExpenseHandler(new Employee("paula pres", new Decimal(20000)));
+
+            will.RegisterNext(mary);
+            mary.RegisterNext(victor);
+            victor.RegisterNext(paula);
+
             Decimal expenseReportAmount;
             string line = null;
             do
@@ -26,23 +28,9 @@ namespace ChainOfResponsibility.Pattern._1
                 {
                     expenseReportAmount = Convert.ToDecimal(line);
                     IExpenseReport expense = new ExpenseReport(expenseReportAmount);
-                    bool expenseProssed = false;
 
-                    foreach (Employee approver in managers)
-                    {
-                        ApprovalResponse response = approver.ApproveExpense(expense);
-
-                        if (response != ApprovalResponse.BeyondApprovalLimit)
-                        {
-                            Console.WriteLine("The request was {0}.", response);
-                            expenseProssed = true;
-                            break;
-                        }
-                    }
-                    if (!expenseProssed)
-                    {
-                        Console.WriteLine("No one was able to approve your expense.");
-                    }
+                    ApprovalResponse response = will.Approve(expense);
+                    Console.WriteLine("The request was {0}.", response);
                 }
             }
             while(line != null);

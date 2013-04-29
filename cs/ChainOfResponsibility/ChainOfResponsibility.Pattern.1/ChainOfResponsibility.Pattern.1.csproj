@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="ApprovalResponse.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="EndOfChainExpenseHandler.cs" />
+    <Compile Include="ExpenseHandler.cs" />
     <Compile Include="ExpenseReport.cs" />
     <Compile Include="IExpenseApprover.cs" />
     <Compile Include="IExpenseReport.cs" />
