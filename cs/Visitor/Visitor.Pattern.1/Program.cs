@@ -16,9 +16,13 @@ namespace Visitor.Pattern._1
             person.Assets.Add(new Loan { Owed = 40000, MonthlyPayment = 40 });
 
             var netWorthVisitor = new NetWorthVisitor();
+            var incomeVisitor = new IncomeVisitor();
+
             person.Accept(netWorthVisitor);
+            person.Accept(incomeVisitor);
 
             Console.WriteLine(netWorthVisitor.Total);
+            Console.WriteLine(incomeVisitor.Amount);
             Console.ReadLine();
         }
     }
