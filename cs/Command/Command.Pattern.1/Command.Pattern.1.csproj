@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Command.Pattern._1.Program2</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,8 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandExecutor.cs" />
+    <Compile Include="CommandParser.cs" />
+    <Compile Include="CreateOrderCommand.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="ICommandFactory.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Program2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShipOrderCommand.cs" />
+    <Compile Include="UpdateOrderCommand.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
