@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy.Pattern.1", "Proxy\Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor.Pattern.1", "Visitor\Visitor.Pattern.1\Visitor.Pattern.1.csproj", "{AB5BA1D1-792A-4A6C-B26D-B106E9BDED7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton.Pattern.1", "Singleton\Singleton.Pattern.1\Singleton.Pattern.1.csproj", "{A3877ABF-D09E-4332-8686-9345F87F48BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -115,6 +117,10 @@ Global
 		{AB5BA1D1-792A-4A6C-B26D-B106E9BDED7A}.Debug|x86.Build.0 = Debug|x86
 		{AB5BA1D1-792A-4A6C-B26D-B106E9BDED7A}.Release|x86.ActiveCfg = Release|x86
 		{AB5BA1D1-792A-4A6C-B26D-B106E9BDED7A}.Release|x86.Build.0 = Release|x86
+		{A3877ABF-D09E-4332-8686-9345F87F48BE}.Debug|x86.ActiveCfg = Debug|x86
+		{A3877ABF-D09E-4332-8686-9345F87F48BE}.Debug|x86.Build.0 = Debug|x86
+		{A3877ABF-D09E-4332-8686-9345F87F48BE}.Release|x86.ActiveCfg = Release|x86
+		{A3877ABF-D09E-4332-8686-9345F87F48BE}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
