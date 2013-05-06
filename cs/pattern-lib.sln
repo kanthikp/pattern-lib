@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor.Pattern.1", "Visito
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton.Pattern.1", "Singleton\Singleton.Pattern.1\Singleton.Pattern.1.csproj", "{A3877ABF-D09E-4332-8686-9345F87F48BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command.Pattern.1", "Command\Command.Pattern.1\Command.Pattern.1.csproj", "{00953C35-D5AE-4100-8451-BBFB228DC641}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -121,6 +123,10 @@ Global
 		{A3877ABF-D09E-4332-8686-9345F87F48BE}.Debug|x86.Build.0 = Debug|x86
 		{A3877ABF-D09E-4332-8686-9345F87F48BE}.Release|x86.ActiveCfg = Release|x86
 		{A3877ABF-D09E-4332-8686-9345F87F48BE}.Release|x86.Build.0 = Release|x86
+		{00953C35-D5AE-4100-8451-BBFB228DC641}.Debug|x86.ActiveCfg = Debug|x86
+		{00953C35-D5AE-4100-8451-BBFB228DC641}.Debug|x86.Build.0 = Debug|x86
+		{00953C35-D5AE-4100-8451-BBFB228DC641}.Release|x86.ActiveCfg = Release|x86
+		{00953C35-D5AE-4100-8451-BBFB228DC641}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
