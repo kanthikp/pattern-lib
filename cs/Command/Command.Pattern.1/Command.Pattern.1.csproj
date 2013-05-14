@@ -51,6 +51,7 @@
     <Compile Include="CreateOrderCommand.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="ICommandFactory.cs" />
+    <Compile Include="NotFoundCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Program2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
